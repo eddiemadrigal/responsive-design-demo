@@ -1,9 +1,13 @@
+/* initial format */
+
 * {
     box-sizing: border-box;
     margin: 20px auto;
     width: 95%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* top heading section */
 
 .top-heading {
     background-color: #333;
@@ -12,16 +16,22 @@
     border-radius: 5px;
 }
 
+/* menu section */
+
 .menu {
     float: left;
     width: 20%;
 }
 
-.menuitem {
+/* menu item styling */
+
+.menuitem { 
     padding: 8px;
     margin-top: 7px;
     border-bottom: 1px solid #f1f1f1;
 }
+
+/* main section */
 
 .main {
     float: left;
@@ -30,25 +40,27 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width:800px) {
+/* button styling  */
+
+button {
+    width: 200px;
+    padding: 20px;
+}
+
+@media (max-width:800px) {
 
     /* For tablets: */
     .main {
         width: 80%;
         padding: 0;
     }
-
-    .right {
-        width: 100%;
-    }
 }
 
-@media only screen and (max-width:500px) {
+@media (max-width:500px) {
 
     /* For mobile phones: */
     .menu,
-    .main,
-    .right {
+    .main {
         width: 100%;
     }
 }
